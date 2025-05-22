@@ -1,0 +1,75 @@
+site_name: The Essential GRASS GIS Guide
+site_description: Getting Started with GRASS GIS
+site_author: Aman Chaudhary
+edit_uri: edit/main/docs/
+
+copyright: "Copyright &copy; Aman Chaudhary"
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - search.highlight
+    # - navigation.sections
+    # - navigation.expand
+    - content.code.copy
+  logo: assets/images/grass-white-no-text.svg
+  favicon: assets/images/logo.png
+  palette:
+    - scheme: default
+      primary: green
+      accent: green
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: green
+      accent: green
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/amanchry
+      name: GitHub
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.com/amanchry
+      name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/amanchry/
+      name: LinkedIn
+    - icon: fontawesome/brands/twitter
+      link: https://x.com/amanchry 
+      name: Twitter
+    - icon: material/web
+      link: https://amanchaudhary.com/
+      name: Personal Website
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+  
+nav:
+  - Introduction: index.md
+  - Installation: installation.md
+  - Core Concepts: concepts.md
+  - Getting Started: quickstart.md
+  - Basics: basics.md
+  - Raster Analysis: raster_basics.md
+  - Vector Operations: vector_basics.md
+  - Time Series: vector_basics.md
+  - Common GRASS GIS Commands: common-commands.md
+  - GRASS Python Scripting: scripting.md
+  - Zonal Statistics: zonalstats.md
+  - Resources: resources.md
+  - About: about.md
+  - Future Topics: coming-soon.md
+      
+
+    
