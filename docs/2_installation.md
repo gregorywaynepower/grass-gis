@@ -22,11 +22,4 @@ sudo apt-get install grass grass-gui grass-dev
 ```
 
 
-### Verifying Installation
-After installation, launch GRASS GIS from your system menu or use the CLI:
-```bash
-grass
-```
-You should see the GRASS startup window asking you to select or create a Location and Mapset.
-
 

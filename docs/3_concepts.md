@@ -28,6 +28,23 @@ When you open GRASS for the first time, a new directory is created in your home 
 
 ![GRASS Startup Screen](../assets/images/grass_startup.png)
 
+1. Selecting the GIS Database directory:
+GRASS data are stored in a directory referred to as DATABASE (also called "GISDBASE"). This directory has to be created with a file manager or the mkdir command, before starting to work with GRASS. Within this DATABASE, the projects are organized by project areas stored in subdirectories called LOCATIONs.
+
+2. Selecting the LOCATION (a project):
+A LOCATION is defined by its coordinate system, map projection and geographical boundaries. The subdirectories and files defining a LOCATION are created automatically when GRASS is started the first time with a new LOCATION. It is important to understand that each projection stays in its own LOCATION.
+See the "Location Wizard" [(4)] to easily create a new LOCATION from scratch from a geocoded file, by defining the parameters or by selecting the corresponding EPSG projection code.
+
+3. Selecting the MAPSET (a subproject):
+Each LOCATION can have many MAPSETs. Each MAPSET is a LOCATION's subdirectory. New MAPSET can be added at GRASS startup (see related button).
+
+4. Location Wizard:
+The "Location Wizard" let's you easily create a new LOCATION. You will be guided through a series of dialogues to browse and select predefined projections (also via EPSG code) or to define individual projections. You can also create new LOCATION easily from a georeferenced data file (e.g., SHAPE file or GeoTIFF, see below). Find below also some rules to define the default raster resolution for a new LOCATION.
+
+5. Start GRASS:
+Once you have selected an existing LOCATION/MAPSET or defined a new one, you can enter GRASS. The graphical user interface wxGUI will open and provide you with a menu system, map visualization tool, digitizer, and more.
+
+
 ---
 
 ## GRASS GIS Database Structure
@@ -83,20 +100,28 @@ module_name input=... output=... [other parameters]
 - `v.` – Vector modules (e.g., `v.buffer`, `v.overlay`)
 - `g.` – General tools (e.g., `g.region`, `g.list`)
 - `i.` – Imagery and remote sensing
+- `r3.` – 3D Raster data processing tools
 - `db.` – Database operations
 - `t.` – Temporal framework
+- `d.` – Display and visualization tools
+
+
 
 Example:
 ```bash
 r.slope.aspect elevation=dem slope=slope_map aspect=aspect_map
 ```
 
+> 📌 [Explore GRASS GIS Tools](https://grass.osgeo.org/grass85/manuals/full_index.html)
+
 ---
 
 ## GUI and CLI
 
 - **GUI (Graphical User Interface)**: Beginner-friendly interface to access tools visually.
+![Graphical User Interface](../assets/images/grass_gui.png)
 - **CLI (Command Line Interface)**: Powerful, scriptable, and preferred for advanced workflows.
+![Command Line Interfacen](../assets/images/grass_cli.png)
 
 Both interfaces work seamlessly and reflect the same underlying operations.
 

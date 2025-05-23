@@ -57,19 +57,18 @@ markdown_extensions:
   
 nav:
   - Introduction: index.md
-  - Installation: installation.md
-  - Core Concepts: concepts.md
-  - Getting Started: quickstart.md
-  - Basics: basics.md
-  - Raster Analysis: raster_basics.md
-  - Vector Operations: vector_basics.md
-  - Time Series: vector_basics.md
-  - Common GRASS GIS Commands: common-commands.md
-  - GRASS Python Scripting: scripting.md
-  - Zonal Statistics: zonalstats.md
-  - Resources: resources.md
-  - About: about.md
-  - Future Topics: coming-soon.md
+  - Installation: 2_installation.md
+  - Core Concepts: 3_concepts.md
+  - Getting Started: 4_quickstart.md
+  - Basics: 5_basics.md
+  - Raster Analysis: 6_raster_basics.md
+  - Vector Operations: 7_vector_basics.md
+  # - Time Series: 8_time_series.md
+  - Common GRASS GIS Commands: 9_common-commands.md
+  - GRASS Python Scripting: 10_scripting.md
+  - Zonal Statistics: 11_zonalstats.md
+  - Resources: 12_resources.md
+  # - Future Topics: 13_coming-soon.md
       
 
     

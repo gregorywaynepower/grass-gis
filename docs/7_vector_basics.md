@@ -39,6 +39,7 @@ v.db.select map=roads
 ```bash
 # Intersect
 v.overlay ainput=landuse binput=admin_boundaries operator=and output=landuse_admin
+
 # Union:
 v.overlay ainput=layer1 binput=layer2 operator=or output=combined_layer
 
