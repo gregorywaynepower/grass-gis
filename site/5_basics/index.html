@@ -13,21 +13,25 @@
       
       
       
+        <link rel="prev" href="../4_quickstart/">
       
       
-      <link rel="icon" href="/assets/images/logo.png">
+        <link rel="next" href="../6_raster_basics/">
+      
+      
+      <link rel="icon" href="../assets/images/logo.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
-        <title>The Essential GRASS GIS Guide</title>
+        <title>Basics - The Essential GRASS GIS Guide</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +50,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#grass-gis-basics" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -83,9 +92,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="The Essential GRASS GIS Guide" class="md-header__button md-logo" aria-label="The Essential GRASS GIS Guide" data-md-component="logo">
+    <a href=".." title="The Essential GRASS GIS Guide" class="md-header__button md-logo" aria-label="The Essential GRASS GIS Guide" data-md-component="logo">
       
-  <img src="/assets/images/grass-white-no-text.svg" alt="logo">
+  <img src="../assets/images/grass-white-no-text.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -102,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Basics
             
           </span>
         </div>
@@ -206,9 +215,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="The Essential GRASS GIS Guide" class="md-nav__button md-logo" aria-label="The Essential GRASS GIS Guide" data-md-component="logo">
+    <a href=".." title="The Essential GRASS GIS Guide" class="md-nav__button md-logo" aria-label="The Essential GRASS GIS Guide" data-md-component="logo">
       
-  <img src="/assets/images/grass-white-no-text.svg" alt="logo">
+  <img src="../assets/images/grass-white-no-text.svg" alt="logo">
 
     </a>
     The Essential GRASS GIS Guide
@@ -223,7 +232,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -245,7 +254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/2_installation/" class="md-nav__link">
+      <a href="../2_installation/" class="md-nav__link">
         
   
   
@@ -267,7 +276,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/3_concepts/" class="md-nav__link">
+      <a href="../3_concepts/" class="md-nav__link">
         
   
   
@@ -289,7 +298,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/4_quickstart/" class="md-nav__link">
+      <a href="../4_quickstart/" class="md-nav__link">
         
   
   
@@ -308,10 +317,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/5_basics/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Basics
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -322,6 +353,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-import-raster-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Import Raster Data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-import-vector-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Import Vector Data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-display-layers-in-gui" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Display Layers in GUI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-set-the-computational-region-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Set the Computational Region (Optional)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-list-imported-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. List Imported Layers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-view-layer-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. View Layer Metadata
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -333,7 +438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/6_raster_basics/" class="md-nav__link">
+      <a href="../6_raster_basics/" class="md-nav__link">
         
   
   
@@ -355,7 +460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/7_vector_basics/" class="md-nav__link">
+      <a href="../7_vector_basics/" class="md-nav__link">
         
   
   
@@ -377,7 +482,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/9_common-commands/" class="md-nav__link">
+      <a href="../9_common-commands/" class="md-nav__link">
         
   
   
@@ -399,7 +504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/10_scripting/" class="md-nav__link">
+      <a href="../10_scripting/" class="md-nav__link">
         
   
   
@@ -421,7 +526,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/11_zonalstats/" class="md-nav__link">
+      <a href="../11_zonalstats/" class="md-nav__link">
         
   
   
@@ -443,7 +548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/12_resources/" class="md-nav__link">
+      <a href="../12_resources/" class="md-nav__link">
         
   
   
@@ -475,6 +580,70 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-import-raster-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Import Raster Data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-import-vector-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Import Vector Data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-display-layers-in-gui" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Display Layers in GUI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-set-the-computational-region-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Set the Computational Region (Optional)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-list-imported-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. List Imported Layers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-view-layer-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. View Layer Metadata
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -486,8 +655,115 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="grass-gis-basics">GRASS GIS Basics</h1>
+<p>Now that you've created your <strong>Location</strong> and <strong>Mapset</strong>, you're ready to start using GRASS GIS to import data, visualize layers, and perform basic GIS operations.</p>
+<p>This chapter covers:</p>
+<ul>
+<li>Importing raster and vector data  </li>
+<li>Viewing and managing layers  </li>
+<li>Setting the computational region  </li>
+<li>Accessing metadata  </li>
+<li>Removing/exporting data  </li>
+</ul>
+<h3 id="1-import-raster-data">1. Import Raster Data</h3>
+<p>To bring in external raster files like <code>.tif</code>:
+<div class="highlight"><pre><span></span><code>r.import<span class="w"> </span><span class="nv">input</span><span class="o">=</span>/path/to/chirps-v3.0.2024.tif<span class="w"> </span><span class="nv">output</span><span class="o">=</span>chirps_pcp_a_2024
+</code></pre></div></p>
+<p>Bulk Import Example:
+<div class="highlight"><pre><span></span><code><span class="c1">## macOS/Linux</span>
+<span class="k">for</span><span class="w"> </span>file<span class="w"> </span><span class="k">in</span><span class="w"> </span>/path/to/folder/*.tif<span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">  </span><span class="nv">name</span><span class="o">=</span><span class="k">$(</span>basename<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$file</span><span class="s2">&quot;</span><span class="w"> </span>.tif<span class="k">)</span>
+<span class="w">  </span>r.import<span class="w"> </span><span class="nv">input</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$file</span><span class="s2">&quot;</span><span class="w"> </span><span class="nv">output</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$name</span><span class="s2">&quot;</span>
+<span class="k">done</span>
+
+<span class="c1">## Windows – PowerShell</span>
+Get-ChildItem<span class="w"> </span><span class="s2">&quot;D:\path\to\folder\*.tif&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>ForEach-Object<span class="w"> </span><span class="o">{</span>
+<span class="w">  </span><span class="nv">$name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">$_</span>.BaseName
+<span class="w">  </span>r.import<span class="w"> </span><span class="nv">input</span><span class="o">=</span><span class="nv">$_</span>.FullName<span class="w"> </span><span class="nv">output</span><span class="o">=</span><span class="nv">$name</span>
+<span class="o">}</span>
+</code></pre></div></p>
+<h3 id="2-import-vector-data">2. Import Vector Data</h3>
+<p>To import shapefiles or other vector formats:
+<div class="highlight"><pre><span></span><code>v.import<span class="w"> </span><span class="nv">input</span><span class="o">=</span>/path/to/IndiaBoundary.geojson<span class="w"> </span><span class="nv">output</span><span class="o">=</span>IndiaBoundary
+</code></pre></div></p>
+<p>Bulk Import Example:
+<div class="highlight"><pre><span></span><code><span class="c1">## macOS/Linux</span>
+<span class="k">for</span><span class="w"> </span>file<span class="w"> </span><span class="k">in</span><span class="w"> </span>/path/to/folder/*.shp<span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">  </span><span class="nv">name</span><span class="o">=</span><span class="k">$(</span>basename<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$file</span><span class="s2">&quot;</span><span class="w"> </span>.shp<span class="k">)</span>
+<span class="w">  </span>v.import<span class="w"> </span><span class="nv">input</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$file</span><span class="s2">&quot;</span><span class="w"> </span><span class="nv">output</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$name</span><span class="s2">&quot;</span>
+<span class="k">done</span>
+
+<span class="c1">## Windows – PowerShell</span>
+Get-ChildItem<span class="w"> </span><span class="s2">&quot;D:\path\to\folder\*.shp&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>ForEach-Object<span class="w"> </span><span class="o">{</span>
+<span class="w">  </span><span class="nv">$name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">$_</span>.BaseName
+<span class="w">  </span>v.import<span class="w"> </span><span class="nv">input</span><span class="o">=</span><span class="nv">$_</span>.FullName<span class="w"> </span><span class="nv">output</span><span class="o">=</span><span class="nv">$name</span>
+<span class="o">}</span>
+</code></pre></div>
+After importing the <strong>CHIRPS raster</strong> and the <strong>IndiaBoundary.geojson</strong>, your GRASS GIS environment will be organized into a <strong>Location</strong>, <strong>Mapset</strong>, and the corresponding imported datasets.</p>
+<p>You should see a structure similar to this in the <strong>Data Catalog</strong>:</p>
+<p><img alt="GRASS Location Structure" src="../assets/images/basics_import.png" /></p>
+<h3 id="3-display-layers-in-gui">3. Display Layers in GUI</h3>
+<p>To visualize data:
+- Use Layer Manager to add raster/vector layers
+- Right-click → Properties to style (color, opacity, etc.)</p>
+<p>Or from command line:
+<div class="highlight"><pre><span></span><code>d.rast<span class="w"> </span><span class="nv">map</span><span class="o">=</span>my_raster
+d.vect<span class="w"> </span><span class="nv">map</span><span class="o">=</span>my_vector
+</code></pre></div></p>
+<h3 id="4-set-the-computational-region-optional">4. Set the Computational Region (Optional)</h3>
+<p>GRASS GIS performs all analysis within the current region extent and resolution.
+<div class="highlight"><pre><span></span><code><span class="c1"># Match region to a raster:</span>
+g.region<span class="w"> </span><span class="nv">raster</span><span class="o">=</span>&lt;existing_raster&gt;
+<span class="c1"># or</span>
+g.region<span class="w"> </span><span class="nv">vector</span><span class="o">=</span>&lt;existing_vector&gt;
+
+<span class="c1"># Set Resolution</span>
+g.region<span class="w"> </span><span class="nv">res</span><span class="o">=</span><span class="m">0</span>.003
+
+<span class="c1"># To manually set region boundaries and resolution:</span>
+g.region<span class="w"> </span><span class="nv">n</span><span class="o">=</span><span class="m">25</span><span class="w"> </span><span class="nv">s</span><span class="o">=</span><span class="m">10</span><span class="w"> </span><span class="nv">e</span><span class="o">=</span><span class="m">90</span><span class="w"> </span><span class="nv">w</span><span class="o">=</span><span class="m">70</span><span class="w"> </span><span class="nv">res</span><span class="o">=</span><span class="m">0</span>.01<span class="w"> </span>-p
+</code></pre></div></p>
+<p>View current region settings:
+<div class="highlight"><pre><span></span><code>g.region<span class="w"> </span>-p
+</code></pre></div></p>
+<p><img alt="GRASS Metadata" src="../assets/images/region_sett.png" /></p>
+<h3 id="5-list-imported-layers">5. List Imported Layers</h3>
+<div class="highlight"><pre><span></span><code>g.list<span class="w"> </span><span class="nv">type</span><span class="o">=</span>raster
+g.list<span class="w"> </span><span class="nv">type</span><span class="o">=</span>vector
+</code></pre></div>
+<h3 id="6-view-layer-metadata">6. View Layer Metadata</h3>
+<p>For raster:
+<div class="highlight"><pre><span></span><code>r.info<span class="w"> </span>chirps_pcp_a_2024
+</code></pre></div>
+<img alt="GRASS Metadata" src="../assets/images/metadata1.png" /></p>
+<p>For vector:
+<div class="highlight"><pre><span></span><code>v.info<span class="w"> </span>IndiaBoundary
+</code></pre></div>
+<img alt="GRASS Metadata" src="../assets/images/metadata3.png" /></p>
+<p>Geometry-only metadata:
+<div class="highlight"><pre><span></span><code>r.info<span class="w"> </span>-g<span class="w"> </span>chirps_pcp_a_2024
+</code></pre></div>
+<img alt="GRASS Metadata" src="../assets/images/metadata2.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -577,10 +853,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "search.highlight", "content.code.copy"], "search": "/assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

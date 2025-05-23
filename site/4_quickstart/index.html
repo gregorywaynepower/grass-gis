@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../basics/">
+        <link rel="prev" href="../3_concepts/">
       
       
-        <link rel="next" href="../vector_basics/">
+        <link rel="next" href="../5_basics/">
       
       
       <link rel="icon" href="../assets/images/logo.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Raster Analysis - The Essential GRASS GIS Guide</title>
+        <title>Getting Started - The Essential GRASS GIS Guide</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#raster-analysis" class="md-skip">
+        <a href="#grass-gis-quickstart" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Raster Analysis
+              Getting Started
             
           </span>
         </div>
@@ -254,7 +254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../installation/" class="md-nav__link">
+      <a href="../2_installation/" class="md-nav__link">
         
   
   
@@ -276,56 +276,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/" class="md-nav__link">
+      <a href="../3_concepts/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Core Concepts
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../quickstart/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Getting Started
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../basics/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Basics
     
   </span>
   
@@ -356,7 +312,7 @@
   
   
   <span class="md-ellipsis">
-    Raster Analysis
+    Getting Started
     
   </span>
   
@@ -369,7 +325,7 @@
   
   
   <span class="md-ellipsis">
-    Raster Analysis
+    Getting Started
     
   </span>
   
@@ -392,47 +348,89 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#clip-raster-to-a-boundary" class="md-nav__link">
+  <a href="#interface-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Clip Raster to a Boundary
+      Interface Overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#get-raster-statistics-min-max-mean-median" class="md-nav__link">
+  <a href="#getting-started-with-grass-gis" class="md-nav__link">
     <span class="md-ellipsis">
-      Get Raster Statistics (min, max, mean, median)
+      Getting Started with GRASS GIS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started with GRASS GIS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-a-grass-database-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create a GRASS Database Directory
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#lulc-masking-eg-mask-only-cropland-areas" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-launch-grass-gis" class="md-nav__link">
     <span class="md-ellipsis">
-      LULC Masking (e.g., Mask only Cropland Areas)
+      2. Launch GRASS GIS
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#raster-calculation" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#3-create-a-new-location-using-command-line" class="md-nav__link">
     <span class="md-ellipsis">
-      Raster Calculation
+      3. Create a New Location using command line
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#temporal-raster-analysis" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#4-create-and-start-a-new-mapset" class="md-nav__link">
     <span class="md-ellipsis">
-      Temporal Raster Analysis
+      4. Create and Start a New Mapset
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-launch-grass-into-the-new-mapset" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Launch GRASS into the new mapset:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-mapset-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Mapset Operations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -451,7 +449,51 @@
   
   
     <li class="md-nav__item">
-      <a href="../vector_basics/" class="md-nav__link">
+      <a href="../5_basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Basics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6_raster_basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Raster Analysis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7_vector_basics/" class="md-nav__link">
         
   
   
@@ -473,29 +515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vector_basics/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Vector Operations
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../common-commands/" class="md-nav__link">
+      <a href="../9_common-commands/" class="md-nav__link">
         
   
   
@@ -517,7 +537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../scripting/" class="md-nav__link">
+      <a href="../10_scripting/" class="md-nav__link">
         
   
   
@@ -539,7 +559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../zonalstats/" class="md-nav__link">
+      <a href="../11_zonalstats/" class="md-nav__link">
         
   
   
@@ -561,56 +581,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../resources.md" class="md-nav__link">
+      <a href="../12_resources/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Resources
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../about.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    About
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../coming-soon/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Future Topics
     
   </span>
   
@@ -647,47 +623,89 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#clip-raster-to-a-boundary" class="md-nav__link">
+  <a href="#interface-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Clip Raster to a Boundary
+      Interface Overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#get-raster-statistics-min-max-mean-median" class="md-nav__link">
+  <a href="#getting-started-with-grass-gis" class="md-nav__link">
     <span class="md-ellipsis">
-      Get Raster Statistics (min, max, mean, median)
+      Getting Started with GRASS GIS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started with GRASS GIS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-a-grass-database-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create a GRASS Database Directory
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#lulc-masking-eg-mask-only-cropland-areas" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-launch-grass-gis" class="md-nav__link">
     <span class="md-ellipsis">
-      LULC Masking (e.g., Mask only Cropland Areas)
+      2. Launch GRASS GIS
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#raster-calculation" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#3-create-a-new-location-using-command-line" class="md-nav__link">
     <span class="md-ellipsis">
-      Raster Calculation
+      3. Create a New Location using command line
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#temporal-raster-analysis" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#4-create-and-start-a-new-mapset" class="md-nav__link">
     <span class="md-ellipsis">
-      Temporal Raster Analysis
+      4. Create and Start a New Mapset
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-launch-grass-into-the-new-mapset" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Launch GRASS into the new mapset:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-mapset-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Mapset Operations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -710,60 +728,109 @@
   
 
 
-<h1 id="raster-analysis">Raster Analysis</h1>
-<p>This section introduces fundamental raster operations in GRASS GIS. You'll learn how to perform map algebra, clipping rasters to a boundary, statistical summaries, LULC masking, raster algebra, and temporal aggregation.</p>
+<h1 id="grass-gis-quickstart">GRASS GIS Quickstart</h1>
+<p>When launching GRASS GIS for the first time, you will open a default project "world_latlog_wgs84" where you can find a map layer called "country_boundaries" showing a world map in the WGS84 coordinate system.</p>
+<p><img alt="GRASS Location Structure" src="../assets/images/grass_start.png" /></p>
 <hr />
-<h3 id="clip-raster-to-a-boundary">Clip Raster to a Boundary</h3>
-<div class="highlight"><pre><span></span><code><span class="c1"># Set region to match vector boundary</span>
-g.region<span class="w"> </span><span class="nv">vector</span><span class="o">=</span>command_boundary<span class="w"> </span><span class="nv">align</span><span class="o">=</span>wapor_eta_m_2023_01<span class="w"> </span>-p
+<h2 id="interface-overview">Interface Overview</h2>
+<p>The GRASS GUI has several panels and tools:</p>
+<ul>
+<li><strong>Layer Manager</strong>: Controls loaded map layers.</li>
+<li><strong>Map Display</strong>: Shows raster/vector data.</li>
+<li><strong>Data Catalog</strong>: Displays the GRASS data hierarchy.</li>
+<li><strong>Console</strong>: Run GRASS commands directly.</li>
+<li><strong>Modules Search Bar</strong>: Search for specific tools and commands.</li>
+</ul>
+<hr />
+<h2 id="getting-started-with-grass-gis">Getting Started with GRASS GIS</h2>
+<p>This section explains how to set up your working environment in GRASS GIS and import your geospatial data using command line</p>
+<h3 id="1-create-a-grass-database-directory">1. Create a GRASS Database Directory</h3>
+<p>Open a terminal and create a directory that will act as the GRASS GIS database:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Linux, Mac, *BSD, ...:</span>
+mkdir<span class="w"> </span>-p<span class="w"> </span>~/grassdata
 
-<span class="c1"># Create a mask using the boundary</span>
-r.mask<span class="w"> </span><span class="nv">vector</span><span class="o">=</span>command_boundary
-
-<span class="c1"># Clip the raster</span>
-r.mapcalc<span class="w"> </span><span class="s2">&quot;eta_clipped = wapor_eta_m_2023_01&quot;</span>
-
-<span class="c1"># Remove the mask after clipping</span>
-r.mask<span class="w"> </span>-r
+<span class="c1"># Windows</span>
+mkdir<span class="w"> </span>D:<span class="se">\g</span>rassdata
 </code></pre></div>
-<h3 id="get-raster-statistics-min-max-mean-median">Get Raster Statistics (min, max, mean, median)</h3>
-<div class="highlight"><pre><span></span><code><span class="c1"># Basic stats:</span>
-r.univar<span class="w"> </span><span class="nv">map</span><span class="o">=</span>eta_clipped<span class="w"> </span>-g
+<blockquote>
+<p>This directory will store all Locations and Mapsets.</p>
+</blockquote>
+<p>This is the root directory that will contain all your GRASS locations and mapsets.</p>
+<h3 id="2-launch-grass-gis">2. Launch GRASS GIS</h3>
+<p>Open GRASS GIS normally <strong>without a full path</strong> so you can create your first Location and Mapset using the GUI.</p>
+<p>Search for GRASS GIS in the Start Menu and open it normally.</p>
+<p>In the startup screen:</p>
+<ul>
+<li>Set GIS Database to: ~/grassdata or D:\grassdata</li>
+<li>Click on New next to Location</li>
+<li>Choose one of the following:<ul>
+<li>Create with EPSG Code (e.g., 4326 for WGS84)</li>
+<li>Import an existing raster/vector to define projection</li>
+</ul>
+</li>
+<li>Once the Location is created, you will be prompted to create your first Mapset (e.g., chirps_pcp)</li>
+</ul>
+<h3 id="3-create-a-new-location-using-command-line">3. Create a New Location using command line</h3>
+<p>Use grass with the -c flag to create a new Location based on a coordinate reference system (CRS).
+<div class="highlight"><pre><span></span><code><span class="c1"># Linux, Mac, *BSD, ...:</span>
+grass<span class="w"> </span>-c<span class="w"> </span>EPSG:4326<span class="w"> </span>~/grassdata/myproject
 
-<span class="c1"># For median and advanced stats:</span>
-r.stats<span class="w"> </span>-aCn<span class="w"> </span><span class="nv">input</span><span class="o">=</span>eta_clipped
-
-<span class="c1"># For raster category counts, area and values:</span>
-r.report<span class="w"> </span><span class="nv">map</span><span class="o">=</span>eta_clipped<span class="w"> </span><span class="nv">units</span><span class="o">=</span>h,c,p
+<span class="c1"># Windows</span>
+grass<span class="w"> </span>-c<span class="w"> </span>EPSG:4326:3<span class="w"> </span>D:<span class="se">\g</span>rassdata<span class="se">\m</span>yproject
 </code></pre></div>
-<h3 id="lulc-masking-eg-mask-only-cropland-areas">LULC Masking (e.g., Mask only Cropland Areas)</h3>
-<div class="highlight"><pre><span></span><code><span class="c1"># Assuming you have an LULC raster (esa_lulc_2021) where value 40 = cropland:</span>
-r.mapcalc<span class="w"> </span><span class="s2">&quot;cropland_mask = if(esa_lulc_2021 == 40, 1, null())&quot;</span>
-r.mask<span class="w"> </span><span class="nv">raster</span><span class="o">=</span>cropland_mask
+This command:</p>
+<ul>
+<li>Creates a new Location named "myproject"</li>
+<li>Uses EPSG:4326 (WGS 84 coordinate system)</li>
+<li>Initializes the default PERMANENT mapset</li>
+</ul>
+<h3 id="4-create-and-start-a-new-mapset">4. Create and Start a New Mapset</h3>
+<p>Once your Location (e.g., <code>myproject</code>) is created, you can add a new <strong>Mapset</strong> to organize your analysis.
+<div class="highlight"><pre><span></span><code><span class="c1"># create a new mapset </span>
+g.mapset<span class="w"> </span>-c<span class="w"> </span><span class="nv">mapset</span><span class="o">=</span>chirps_pcp<span class="w"> </span><span class="nv">location</span><span class="o">=</span>myproject
+</code></pre></div></p>
+<blockquote>
+<p>Notes:
+-  Here, we are creating a mapset named chirps_pcp, which stands for CHIRPS Precipitation Data. We'll use this mapset for importing and analyzing precipitation datasets in upcoming sections.
+Download <strong><em>CHIRPS Annual Precipitation</em></strong> Data (2020–2024):  <a href="https://data.chc.ucsb.edu/products/CHIRPS/v3.0/annual/global/tifs/">https://data.chc.ucsb.edu/products/CHIRPS/v3.0/annual/global/tifs/</a></p>
+</blockquote>
+<h3 id="5-launch-grass-into-the-new-mapset">5. Launch GRASS into the new mapset:</h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># Mac/Linux</span>
+grass<span class="w"> </span>--text<span class="w"> </span>~/grassdata/myproject/chirps_pcp
 
-<span class="c1"># Apply it to another raster:</span>
-r.mapcalc<span class="w"> </span><span class="s2">&quot;eta_cropland = wapor_eta_m_2023_01&quot;</span>
-
-<span class="c1"># Then remove the mask:</span>
-r.mask<span class="w"> </span>-r
+<span class="c1"># Windows</span>
+grass<span class="w"> </span>--text<span class="w"> </span>D:<span class="se">\g</span>rassdata<span class="se">\m</span>yproject<span class="se">\c</span>hirps_pcp
 </code></pre></div>
-<h3 id="raster-calculation">Raster Calculation</h3>
-<div class="highlight"><pre><span></span><code><span class="c1"># Water Productivity (WP)</span>
-r.mapcalc<span class="w"> </span><span class="s2">&quot;wp_2023_01 = tbp_2023_01 / (wapor_eta_m_2023_01 * 10)&quot;</span>
-</code></pre></div>
-<h3 id="temporal-raster-analysis">Temporal Raster Analysis</h3>
-<div class="highlight"><pre><span></span><code><span class="c1"># Mean over years</span>
-r.series<span class="w"> </span><span class="nv">input</span><span class="o">=</span>wapor_eta_a_2018,wapor_eta_a_2019,wapor_eta_a_2020,wapor_eta_a_2021<span class="w"> </span><span class="nv">output</span><span class="o">=</span>eta_mean_2018_2021<span class="w"> </span><span class="nv">method</span><span class="o">=</span>average
-
-<span class="c1"># Max or Min over years</span>
-r.series<span class="w"> </span><span class="nv">input</span><span class="o">=</span>wapor_eta_a_2018,wapor_eta_a_2019,wapor_eta_a_2020,wapor_eta_a_2021<span class="w"> </span><span class="nv">output</span><span class="o">=</span>eta_max_2018_2021<span class="w"> </span><span class="nv">method</span><span class="o">=</span>maximum
-
-<span class="c1"># Aggregate Monthly to Annual Raster: Annual Sum</span>
-r.series<span class="w"> </span><span class="nv">input</span><span class="o">=</span><span class="k">$(</span>g.list<span class="w"> </span><span class="nv">type</span><span class="o">=</span>raster<span class="w"> </span><span class="nv">pattern</span><span class="o">=</span><span class="s2">&quot;wapor_eta_m_2023_*&quot;</span><span class="w"> </span><span class="nv">separator</span><span class="o">=</span>comma<span class="k">)</span><span class="w"> </span><span class="nv">output</span><span class="o">=</span>wapor_eta_a_2023_sum<span class="w"> </span><span class="nv">method</span><span class="o">=</span>sum
-
-<span class="c1"># Aggregate Monthly to Annual Raster: Annual Mean</span>
-r.series<span class="w"> </span><span class="nv">input</span><span class="o">=</span><span class="k">$(</span>g.list<span class="w"> </span><span class="nv">type</span><span class="o">=</span>raster<span class="w"> </span><span class="nv">pattern</span><span class="o">=</span><span class="s2">&quot;wapor_eta_m_2023_*&quot;</span><span class="w"> </span><span class="nv">separator</span><span class="o">=</span>comma<span class="k">)</span><span class="w"> </span><span class="nv">output</span><span class="o">=</span>wapor_eta_a_2023_mean<span class="w"> </span><span class="nv">method</span><span class="o">=</span>average
-</code></pre></div>
+<blockquote>
+<p>Notes:
+- The new mapset must be inside an existing location.</p>
+</blockquote>
+<h3 id="additional-mapset-operations">Additional Mapset Operations</h3>
+<p>List all available mapsets
+<div class="highlight"><pre><span></span><code>g.mapsets<span class="w"> </span>-l
+</code></pre></div></p>
+<p>Switch to a different mapset within the same location
+<div class="highlight"><pre><span></span><code>g.mapset<span class="w"> </span><span class="nv">mapset</span><span class="o">=</span>ind_annual_data<span class="w">  </span>
+</code></pre></div></p>
+<h3 id="sample-data">Sample Data</h3>
+<p>To follow along with the upcoming tutorials, please download the following sample datasets:</p>
+<ul>
+<li>
+<p><strong>India Boundary</strong><br />
+  ➡️ <a href="https://amanchry.github.io/grass-gis/assets/IndiaBoundary.geojson">Download IndiaBoundary.geojson</a></p>
+</li>
+<li>
+<p><strong>India States</strong><br />
+  ➡️ <a href="https://amanchry.github.io/grass-gis/assets/IndiaStates.geojson">Download IndiaStates.geojson</a></p>
+</li>
+</ul>
+<p>In this section, we:</p>
+<ul>
+<li>Set up the GRASS GIS database structure</li>
+<li>Created a Location and Mapset</li>
+<li>Prepared to work with CHIRPS precipitation data</li>
+</ul>
+<p>👉 In the next section, we’ll learn how to import raster and vector data into your mapset and begin your analysis!</p>
 
 
 

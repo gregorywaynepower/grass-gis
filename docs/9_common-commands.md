@@ -14,7 +14,7 @@ grass -c /mnt/mapdata/grassdata/new_location
 grass /path/to/mapset/location
 
 # Create a new mapset inside an existing location
-g.mapset -c mapset=test location=eqipa
+g.mapset -c mapset=test location=myproject
 
 # Switch to a different mapset
 g.mapset mapset=pcp_mean_monthly

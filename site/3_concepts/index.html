@@ -13,6 +13,10 @@
       
       
       
+        <link rel="prev" href="../2_installation/">
+      
+      
+        <link rel="next" href="../4_quickstart/">
       
       
       <link rel="icon" href="../assets/images/logo.png">
@@ -20,7 +24,7 @@
     
     
       
-        <title>Lulc analysis - The Essential GRASS GIS Guide</title>
+        <title>Core Concepts - The Essential GRASS GIS Guide</title>
       
     
     
@@ -71,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#core-concepts" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -102,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lulc analysis
+              Core Concepts
             
           </span>
         </div>
@@ -245,7 +254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../installation/" class="md-nav__link">
+      <a href="../2_installation/" class="md-nav__link">
         
   
   
@@ -264,10 +273,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../concepts/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Core Concepts
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -278,6 +309,131 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#grass-gis-startup-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      GRASS GIS Startup Screen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grass-gis-database-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      GRASS GIS Database Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grass-region-computational-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      GRASS Region: Computational Window
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raster-and-vector-data-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raster and Vector Data Models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-structure-and-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Structure and Modules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Command Structure and Modules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standard Syntax:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-prefixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module Prefixes:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gui-and-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      GUI and CLI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attribute-tables-and-databases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attribute Tables and Databases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripting-and-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scripting and Automation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logging-and-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logging and Metadata
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -289,7 +445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../quickstart/" class="md-nav__link">
+      <a href="../4_quickstart/" class="md-nav__link">
         
   
   
@@ -311,7 +467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basics/" class="md-nav__link">
+      <a href="../5_basics/" class="md-nav__link">
         
   
   
@@ -333,7 +489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../raster_basics/" class="md-nav__link">
+      <a href="../6_raster_basics/" class="md-nav__link">
         
   
   
@@ -355,7 +511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vector_basics/" class="md-nav__link">
+      <a href="../7_vector_basics/" class="md-nav__link">
         
   
   
@@ -377,29 +533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vector_basics/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Vector Operations
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../common-commands/" class="md-nav__link">
+      <a href="../9_common-commands/" class="md-nav__link">
         
   
   
@@ -421,7 +555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../scripting/" class="md-nav__link">
+      <a href="../10_scripting/" class="md-nav__link">
         
   
   
@@ -443,7 +577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../zonalstats/" class="md-nav__link">
+      <a href="../11_zonalstats/" class="md-nav__link">
         
   
   
@@ -465,56 +599,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../resources.md" class="md-nav__link">
+      <a href="../12_resources/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Resources
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../about.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    About
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../coming-soon/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Future Topics
     
   </span>
   
@@ -541,6 +631,121 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#grass-gis-startup-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      GRASS GIS Startup Screen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grass-gis-database-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      GRASS GIS Database Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grass-region-computational-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      GRASS Region: Computational Window
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raster-and-vector-data-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raster and Vector Data Models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-structure-and-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command Structure and Modules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Command Structure and Modules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standard Syntax:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-prefixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module Prefixes:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gui-and-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      GUI and CLI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attribute-tables-and-databases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attribute Tables and Databases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripting-and-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scripting and Automation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logging-and-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logging and Metadata
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -559,9 +764,163 @@
   
 
 
-  <h1>Lulc analysis</h1>
-
-
+<h1 id="core-concepts">Core Concepts</h1>
+<p>Understanding the core structure and philosophy of GRASS GIS is essential before diving into spatial analysis. GRASS GIS organizes data and operations in a unique hierarchical structure and uses powerful tools for geospatial processing.</p>
+<p>The main component of the Data tab is the Data Catalog which shows the GRASS GIS hierarchical structure consisting of database, project and mapset .</p>
+<ol>
+<li>
+<p><strong>GRASS database</strong> (root project directory):</p>
+<ul>
+<li><strong>GISDBASE</strong> is the directory where all GRASS GIS data is stored.</li>
+<li>It acts as a container that holds <strong>LOCATIONS</strong>.</li>
+<li>You can think of <strong>GISDBASE</strong> as the "root folder" where all GRASS-related data for a project is organized.</li>
+</ul>
+</li>
+<li>
+<p><strong>Location (Project)</strong> (defines projection and extent):</p>
+<ul>
+<li>A <strong>LOCATION</strong> is a folder within <strong>GISDBASE</strong> that defines a specific coordinate system, projection, and geographic extent.</li>
+<li>Each <strong>LOCATION</strong> is tied to a specific Coordinate Reference System (CRS), so all maps and data within a location must use the same CRS.</li>
+</ul>
+</li>
+<li>
+<p><strong>Mapset</strong> (stores individual data and settings):</p>
+<ul>
+<li>A <strong>MAPSET</strong> is a subdirectory inside a <strong>LOCATION</strong> where data is stored. It helps manage different workflows or user data independently, even within the same <strong>LOCATION</strong>.</li>
+<li>The <strong>PERMANENT</strong> mapset inside each <strong>LOCATION</strong> contains base information such as region settings (the extent and resolution) and the coordinate system. Other mapsets can be created for individual users or tasks within the same location.</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>📘 Read the <a href="https://grass.osgeo.org/grass-stable/manuals/helptext.html">GRASS Quickstart Guide</a> to understand this setup better.</p>
+</blockquote>
+<h2 id="grass-gis-startup-screen">GRASS GIS Startup Screen</h2>
+<p>When you open GRASS for the first time, a new directory is created in your home folder. This directory is called grassdata by default and stores all your GRASS projects. GRASS projects are simply folders storing your geospatial data with common coordinate reference system (CRS), ensuring consistency of your data. At the project level, data is further organized into subprojects called mapsets, which you can use to manage different subregions or analyses within a project. Each project contains a special mapset called <strong>PERMANENT</strong>, which is used to store source datasets for your analysis that can be easily accessed from other mapsets.</p>
+<p><img alt="GRASS Startup Screen" src="../assets/images/grass_startup.png" /></p>
+<ol>
+<li>
+<p>Selecting the GIS Database directory:
+GRASS data are stored in a directory referred to as DATABASE (also called "GISDBASE"). This directory has to be created with a file manager or the mkdir command, before starting to work with GRASS. Within this DATABASE, the projects are organized by project areas stored in subdirectories called LOCATIONs.</p>
+</li>
+<li>
+<p>Selecting the LOCATION (a project):
+A LOCATION is defined by its coordinate system, map projection and geographical boundaries. The subdirectories and files defining a LOCATION are created automatically when GRASS is started the first time with a new LOCATION. It is important to understand that each projection stays in its own LOCATION.
+See the "Location Wizard" [(4)] to easily create a new LOCATION from scratch from a geocoded file, by defining the parameters or by selecting the corresponding EPSG projection code.</p>
+</li>
+<li>
+<p>Selecting the MAPSET (a subproject):
+Each LOCATION can have many MAPSETs. Each MAPSET is a LOCATION's subdirectory. New MAPSET can be added at GRASS startup (see related button).</p>
+</li>
+<li>
+<p>Location Wizard:
+The "Location Wizard" let's you easily create a new LOCATION. You will be guided through a series of dialogues to browse and select predefined projections (also via EPSG code) or to define individual projections. You can also create new LOCATION easily from a georeferenced data file (e.g., SHAPE file or GeoTIFF, see below). Find below also some rules to define the default raster resolution for a new LOCATION.</p>
+</li>
+<li>
+<p>Start GRASS:
+Once you have selected an existing LOCATION/MAPSET or defined a new one, you can enter GRASS. The graphical user interface wxGUI will open and provide you with a menu system, map visualization tool, digitizer, and more.</p>
+</li>
+</ol>
+<hr />
+<h2 id="grass-gis-database-structure">GRASS GIS Database Structure</h2>
+<p><img alt="GRASS Location Structure" src="../assets/images/grass_structure.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GISDBASE</code></td>
+<td>Root folder where all GRASS GIS data is stored.</td>
+</tr>
+<tr>
+<td><code>LOCATION (PROJECT)</code></td>
+<td>Folder inside <code>GISDBASE</code> that defines a projection/CRS. All data in a LOCATION shares the same CRS.</td>
+</tr>
+<tr>
+<td><code>MAPSET</code></td>
+<td>Subdirectory of a LOCATION for storing actual data and managing workflows.</td>
+</tr>
+<tr>
+<td><code>PERMANENT</code></td>
+<td>Special mapset holding region settings and the default CRS.</td>
+</tr>
+<tr>
+<td><code>WIND</code></td>
+<td>File in each MAPSET that holds region resolution/extent.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="grass-region-computational-window">GRASS Region: Computational Window</h2>
+<p>Each analysis in GRASS operates within a defined <strong>computational region</strong>:
+- It specifies the geographic <strong>extent</strong>, <strong>resolution</strong>, and <strong>alignment</strong>.
+- You can view or set the region using the <code>g.region</code> command.</p>
+<blockquote>
+<p>📌 <em>All raster calculations are restricted to the computational region.</em></p>
+</blockquote>
+<hr />
+<h2 id="raster-and-vector-data-models">Raster and Vector Data Models</h2>
+<p>GRASS supports both <strong>raster</strong> and <strong>vector</strong> formats:</p>
+<ul>
+<li><strong>Raster data</strong> represent continuous surfaces like elevation or precipitation using a grid of cells.</li>
+<li><strong>Vector data</strong> store discrete features such as roads, boundaries, or points of interest using geometries (point, line, polygon).</li>
+</ul>
+<p>Common import commands:</p>
+<ul>
+<li><code>r.in.gdal</code> – Import raster data</li>
+<li><code>v.in.ogr</code> – Import vector data</li>
+</ul>
+<hr />
+<h2 id="command-structure-and-modules">Command Structure and Modules</h2>
+<p>GRASS is modular: each task is handled by a <strong>command-line module</strong>.</p>
+<h3 id="standard-syntax">Standard Syntax:</h3>
+<div class="highlight"><pre><span></span><code>module_name<span class="w"> </span><span class="nv">input</span><span class="o">=</span>...<span class="w"> </span><span class="nv">output</span><span class="o">=</span>...<span class="w"> </span><span class="o">[</span>other<span class="w"> </span>parameters<span class="o">]</span>
+</code></pre></div>
+<h3 id="module-prefixes">Module Prefixes:</h3>
+<ul>
+<li><code>r.</code> – Raster modules (e.g., <code>r.mapcalc</code>, <code>r.slope.aspect</code>)</li>
+<li><code>v.</code> – Vector modules (e.g., <code>v.buffer</code>, <code>v.overlay</code>)</li>
+<li><code>g.</code> – General tools (e.g., <code>g.region</code>, <code>g.list</code>)</li>
+<li><code>i.</code> – Imagery and remote sensing</li>
+<li><code>r3.</code> – 3D Raster data processing tools</li>
+<li><code>db.</code> – Database operations</li>
+<li><code>t.</code> – Temporal framework</li>
+<li><code>d.</code> – Display and visualization tools</li>
+</ul>
+<p>Example:
+<div class="highlight"><pre><span></span><code>r.slope.aspect<span class="w"> </span><span class="nv">elevation</span><span class="o">=</span>dem<span class="w"> </span><span class="nv">slope</span><span class="o">=</span>slope_map<span class="w"> </span><span class="nv">aspect</span><span class="o">=</span>aspect_map
+</code></pre></div></p>
+<blockquote>
+<p>📌 <a href="https://grass.osgeo.org/grass85/manuals/full_index.html">Explore GRASS GIS Tools</a></p>
+</blockquote>
+<hr />
+<h2 id="gui-and-cli">GUI and CLI</h2>
+<ul>
+<li><strong>GUI (Graphical User Interface)</strong>: Beginner-friendly interface to access tools visually.
+<img alt="Graphical User Interface" src="../assets/images/grass_gui.png" /></li>
+<li><strong>CLI (Command Line Interface)</strong>: Powerful, scriptable, and preferred for advanced workflows.
+<img alt="Command Line Interfacen" src="../assets/images/grass_cli.png" /></li>
+</ul>
+<p>Both interfaces work seamlessly and reflect the same underlying operations.</p>
+<hr />
+<h2 id="attribute-tables-and-databases">Attribute Tables and Databases</h2>
+<p>Each vector map can be linked to an attribute table (usually SQLite by default). GRASS provides SQL-like functionality with <code>db.select</code>, <code>db.connect</code>, etc., to manage these databases.</p>
+<h2 id="scripting-and-automation">Scripting and Automation</h2>
+<ul>
+<li>GRASS supports <strong>Python scripting</strong> using the <code>grass.script</code> and <code>grass.pygrass</code> modules.</li>
+<li>Batch processing is possible with <strong>Bash</strong>, <strong>Makefiles</strong>, or <strong>Python Notebooks</strong>.</li>
+<li>This enables building automated, reproducible workflows.</li>
+</ul>
+<hr />
+<h2 id="logging-and-metadata">Logging and Metadata</h2>
+<p>Every GRASS module logs processing history in the metadata:
+- View history using <code>r.info</code> or <code>v.info</code>
+- Helps maintain data <strong>provenance</strong> and <strong>reproducibility</strong></p>
+<hr />
+<p>By understanding these concepts, you are now ready to begin working with raster and vector data in GRASS GIS.</p>
 
 
 
