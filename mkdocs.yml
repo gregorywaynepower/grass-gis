@@ -3,7 +3,6 @@ site_description: Getting Started with GRASS GIS
 site_author: Aman Chaudhary
 edit_uri: edit/main/docs/
 
-copyright: "Copyright &copy; Aman Chaudhary"
 
 theme:
   name: material
